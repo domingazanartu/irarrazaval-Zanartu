@@ -19,7 +19,7 @@ var trabajos = [
 }, {
     figure: "media/foto-05.jpg",
     title: "Diseño Textil",
-    about: "Froggy: Polera salvadidas de uso diario exclusivas para niños.",
+    about: "Froggy: Polera salvavidas de uso diario exclusivas para niños.",
 }, {
     figure: "media/foto-06.jpg",
     title: "Diseño Textil",
