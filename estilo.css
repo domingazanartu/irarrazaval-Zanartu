@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald'); /* ACA SE LE CAMBIA LA TIPOGRAFÍA */
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+*{ font-family: 'Oswald', sans-serif;
+	margin:0;
+	padding:0;
+}
+
+/* ALGUNAS DEFINICIONES GENÉRICAS */
+
+body{
+	font-family: 'Quicksand', sans-serif; /* ACA SE LE CAMBIA LA TIPOGRAFÍA AL CUERPO macarena... */
+	background:rgba(255,255,255,1);
+	color:rgba(112,111,111,1);
+}
+
+h1, h2, h3, h4{
+	font-weight:700; 
+	font-family: 'Space Mono', monospace;
+}
+
+/* ACA SE LE CAMBIA LA TIPOGRAFÍA AL NOMBRE PRINCIPAL ZAÑARTU IRARRAZAVAL */
+h1{
+	font-size:5rem;
+	letter-spacing:0.1em;
+	color:rgba(255,103,0,0.9);
+	text-align:center;
+}
+
+/* ACA SE LE CAMBIA EL COLOR A PORTAFOLIO DE ARRIBA */
+
+h2{
+	font-size:2rem;
+	letter-spacing:0.1em;
+	color:rgba(255,255,255,0.9);
+	text-align:center;
+}
+
+/* ACA SE LE CAMBIA EL COLOR A ESTAS SOMOS NOSOTRAS Y PORTAFOLIO */
+h3{
+	font-size:1.5rem;
+	letter-spacing:0.1em;
+	color:rgba(0,0,0,0.9);
+	text-align:center;
+	padding:1rem 0;
+}
+
+/* ACA SE LE CAMBIA LA TIPOGRAFÍA DEL ESCRIBEME */
+a{
+	color:rgba(255,103,0,1);
+	text-decoration:none;
+}
+
+a:hover{
+	color:rgba(255,0,0,1);
+	text-decoration:underline;
+}
+
+/* COMENZAMOS CON LAS PARTES */
+
+#contenido{width:98%; margin:1%;}
+
+
+header{
+	width:98%;
+	top:36%;
+	position: absolute;
+	text-align:center;
+	z-index:9;
+	color:white;
+}
+
+video{
+	width:100%;
+	height:auto;
+}
+
+
+
+#somos{
+	width:100%;
+	color: rgba (0,0,0,0.9); /* A es alfa transparencia */ 
+	background:rgb(250,250,250);
+	margin-bottom:2%;
+	}
+
+.dupla{
+	width:46%;
+	padding:2%;
+	float:left;
+	background-color:red;
+	}
+
+.primera{
+	min-height:300px;
+	text-align:left;
+	background-color:rgba(225, 225, 225, 1.00);
+	background-image:url('media/dupla-01.jpg'); /* Fotos de las duplas 1 */ 
+	background-position:top right;
+	background-repeat:no-repeat;
+	background-size:auto 100%;
+}
+.primera h4{padding: 2% 40% 1% 2%;}
+ /* color: blue; para cambiar el color de las tipografias */ 
+
+.primera h5{padding: 1% 40% 2% 2%; margin-bottom:5em; letter-spacing:0.1em;}
+
+.primera p{padding: 2% 40% 2% 2%;}
+
+.primera address{padding: 2% 40% 2% 2%; font-size:0.9em; font-style:normal;}
+
+.segunda{
+	min-height:300px;
+	text-align:right;
+	background-color:rgba(235, 235, 235, 1.00);
+	background-image:url('media/dupla-02.jpg'); /* Fotos de las duplas 2 */ 
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-size:auto 100%;
+}
+
+.segunda h4{padding: 2% 2% 1% 40%;}
+
+.segunda h5{padding: 1% 2% 2% 40%; margin-bottom:5em; letter-spacing:0.1em;}
+
+.segunda p{padding: 2% 2% 2% 40%;}
+
+.segunda address{padding: 2% 2% 2% 40%; font-size:0.9em; font-style:normal;}
+
+#somos hr{
+	clear:both;
+	border:none;
+	}
+
+/* Cambiar color del borde a cada cuadrado */ 
+#portafolio{
+	width:100%;
+	padding-bottom:1%;
+	border:solid;
+	color:rgba(255,103,0,0.9);
+	background:linear-gradient (to bottom, #eee, #aaa);
+	color: white
+	color:rgba(255,103,0,0.9);
+}
+
+/* Cambiar color del borde a cada cuadrado */ 
+.item {
+	width:22%;
+	margin:1%;
+	color:#333;
+	background:; 
+	box-shadow:0 0 8px rgba(255,103,42,1.8);
+}
+
+.item {  animation-name: agua; 
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;}
+
+@keyframes agua {
+  from {
+    background: #C9C9C9;
+  }
+  to {
+    background: #FA6122;
+  }
+}
+
+.item:hover{
+	cursor:crosshair;
+}
+
+.item figure{
+	overflow:hidden;
+}
+
+.item figure img{
+	width:100%; 
+	height:auto; 
+	margin-bottom:-4px;
+	filter: grayscale(1);
+}
+
+.item:hover figure img{
+	transform:scale(2);
+	filter: grayscale(0);	
+	transition:min-height 1s;
+}
+
+.item h4{
+	font-size:1em;
+	letter-spacing:0.025em;
+	margin:5% 5% 3% 5%;
+}
+
+
+.item p{
+	font-size:0.875em;
+	letter-spacing:0.05em;
+	margin:2% 5% 6% 5%;
+}
+
+footer{
+	width:100%;
+	padding:3em 0 1em 0;
+	text-align:center;
+
+}
+
+footer p{
+	text-transform:uppercase;
+	letter-spacing:0.1em;
+	font-size:0.9em;
+	}
+
+/* AJUSTES PARA QUE SE VEA BIEN EN DISTINTOS DISPOSITIVOS */	
+
+@media screen and (orientation: portrait){
+	
+	.dupla{
+		width:96%;
+		padding:2%;
+		float:left;
+	}
+
+}
+
+@media screen and (max-width: 992px){
+	
+	header{top:24%;}
+
+}
+
+@media screen and (max-width: 768px){
+
+	header{top:12%;}
+	
+	.item{
+		width:48%;
+		margin:1%;
+		background:#000;
+		color:#FFF;
+	}
+
+}
+
+@media screen and (max-width: 576px){
+
+	header{top:2%;}
+	
+	.item{
+		width:96%;
+		margin:2%;
+		background:#000;
+		color:#FFF;
+	}
+
+}

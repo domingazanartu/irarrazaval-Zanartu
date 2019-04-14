@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head> <!-- meta datos -->
+    <meta charset="utf-8"> <!-- hay que ocupra esta caja de caracteres (tildes) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- usar todo el ancho de la pantalla, la imagen) -->
+    <title>*Irarrázaval · Zanartu*</title> <!-- nombre de arriba de la ventana de la página -->
+    <meta name="title" content="Irarrázaval & Zanartu"> <!-- meta datos del nombre de arriba de la ventana de la página -->
+    <link rel="icon" type="image/png" href="media/favicon.png" /> <!-- icono pequeño de la ventana de la página -->   
+    <!-- Metadatos Genéricos -->
+    <meta name="description" content="Portafolio de diseño">
+    <meta name="image" content="http://www.senati.edu.pe/sites/default/files/2017/carrera/11/carrera-dual-diseno-grafico-senati-1800x1190.jpg"> 
+    <!-- Metadatos para Schema.org for Google -->
+    <meta itemprop="name" content="Irarrázaval&Zañartu">
+    <meta itemprop="description" content="Portafolio de diseño">
+    <meta itemprop="image" content="http://www.senati.edu.pe/sites/default/files/2017/carrera/11/carrera-dual-diseno-grafico-senati-1800x1190.jpg">
+    <!-- Metadatos para Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Irarrázaval&Zañartu">
+    <meta name="twitter:description" content="Portafolio de diseño">
+    <meta name="twitter:image" content="http://www.senati.edu.pe/sites/default/files/2017/carrera/11/carrera-dual-diseno-grafico-senati-1800x1190.jpg">
+    <!-- Metadatos para Open Graph general (Facebook y Pinterest) -->
+    <meta name="og:title" content="Irarrázaval&Zañartu">
+    <meta name="og:description" content="Portafolio de diseño">
+    <meta name="og:image" content="http://www.senati.edu.pe/sites/default/files/2017/carrera/11/carrera-dual-diseno-grafico-senati-1800x1190.jpg">
+    <meta name="og:locale" content="es_CL">
+    <meta name="og:type" content="website">
+    <!-- Ahora vinculamos el estilo -->
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+</head>
+
+<body>
+    <div id="contenido">
+        <header>
+            <h1>IRARRÁZAVAL & ZAÑARTU</h1>    <!-- Encabezados, ojala repetir la descripción de los metadatos -->
+            <h2>Portafolio de diseño</h2>
+        </header>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="media/video.mp4" type="video/mp4">  
+            <source src="media/video.webm" type="video/webm">  
+        
+        </video>
+
+        <h3>ESTAS SOMOS NOSOTRAS</h3>
+        <div id="somos">
+
+            <div class="dupla primera"> <!-- primera persona -->
+                <h4>MACARENA IRARRÁZAVAL</h4>
+                <h5>"Me gusta e interesa el diseño sustentable".</h5>
+                <p>Estudiante de tercer año de diseño de la Universidad Católica. Si te interesa mi trabajo...</p>
+                <address><a href="mailto:mdirarrazaval1@uc.cl">Escríbeme aquí.</a></address>
+            </div>
+
+            <div class="dupla segunda"> <!-- segunda persona -->
+                <h4>DOMINGA ZAÑARTU</h4>
+                <h5>"Me gusta y tengo preferencias por el diseño gráfico".</h5>
+                <p>Estudiante de tercer año de diseño de la Universidad Católica. Si te interesa mi trabajo...</p>
+                <address><a href="mailto:dzanartu@uc.cl">Escríbeme aquí.</a></address>
+            </div>
+            
+            <hr />
+        </div><!-- acá cerramos el div id="somos"-->
+
+        <h3>PORTAFOLIO</h3>
+        
+        <div id="portafolio">
+        
+            <!--acá se colocan y organizan las cosas con programación-->
+        
+        </div><!-- acá cerramos el div id="portafolio"-->
+
+        <footer> 
+            <p>Procesos de Producción · sección web · primer semestre · 2019 · Hecho para ti · Contáctanos  </p> 
+
+         <!--pie de página, agregarle algo-->
+
+
+        </footer>
+
+    </div><!-- acá abajo cerramos el div id="contenido"-->
+
+    <!-- Lo que sigue SI es PROGRAMACIÓN -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script>
+        // ESTO SIRVE PARA ARREGLAR CADA ÍTEM DEL PORTAFOLIO COMO ALBAÑILERÍA (MASONRY)
+        window.onload = function() {
+            var container = document.querySelector('#portafolio');
+            var msnry = new Masonry(portafolio, {
+                itemSelector: '.item'
+            });
+        };
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="portafolio.js"></script>
+</body>
+
+</html>
